@@ -60,6 +60,9 @@
 ;; Wrap when navigating history.
 (setq cider-repl-wrap-history t)
 
+;; Do not show health banner
+(setq cider-repl-display-help-banner nil)
+
 ;; enable paredit in your REPL
 ;; (add-hook 'cider-repl-mode-hook 'paredit-mode)
 
