@@ -3,10 +3,11 @@
 ;;;;
 
 ;; Enable paredit for Clojure
-;; (add-hook 'clojure-mode-hook 'enable-paredit-mode)
+(add-hook 'clojure-mode-hook 'enable-paredit-mode)
+(add-hook 'clojure-mode-hook #'electric-pair-mode)
 
 ;; Enable smartparens for Clojure
-(add-hook 'clojure-mode-hook #'smartparens-strict-mode)
+;; (add-hook 'clojure-mode-hook #'smartparens-strict-mode)
 
 ;; Enable Aggressive Indent Mode
 (add-hook 'clojure-mode-hook #'aggressive-indent-mode)
@@ -18,6 +19,9 @@
 ;; Enable company-mode when cider-repl and cider-mode are activated
 (add-hook 'cider-repl-mode-hook #'company-mode)
 (add-hook 'cider-mode-hook #'company-mode)
+(add-hook 'cider-repl-mode-hook #'electric-pair-mode)
+(add-hook 'cider-mode-hook #'electric-pair-mode)
+
 
 ;; Enable Fuzzy completion for company when cider-mode is activated
 (add-hook 'cider-repl-mode-hook #'cider-company-enable-fuzzy-completion)
@@ -64,10 +68,10 @@
 (setq cider-repl-display-help-banner nil)
 
 ;; enable paredit in your REPL
-;; (add-hook 'cider-repl-mode-hook 'paredit-mode)
+(add-hook 'cider-repl-mode-hook 'paredit-mode)
 
 ;; enable smartparens in your REPL
-(add-hook 'cider-repl-mode-hook 'smartparens-strict-mode)
+;; (add-hook 'cider-repl-mode-hook 'smartparens-strict-mode)
 
 (require 'smartparens)
 (sp-pair "'" nil :actions :rem)
