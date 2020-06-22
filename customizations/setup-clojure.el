@@ -75,8 +75,8 @@
 ;; enable smartparens in your REPL
 ;; (add-hook 'cider-repl-mode-hook 'smartparens-strict-mode)
 
-(require 'smartparens)
-(sp-pair "'" nil :actions :rem)
+;; (require 'smartparens)
+;; (sp-pair "'" nil :actions :rem)
 
 ;; Use clojure mode for other extensions
 (add-to-list 'auto-mode-alist '("\\.edn$" . clojure-mode))
