@@ -22,6 +22,8 @@
 (add-hook 'cider-repl-mode-hook #'electric-pair-mode)
 (add-hook 'cider-mode-hook #'electric-pair-mode)
 
+;; Enable cljstyle-mode
+(add-hook 'clojure-mode-hook #'cljstyle-mode)
 
 ;; Enable Fuzzy completion for company when cider-mode is activated
 (add-hook 'cider-repl-mode-hook #'cider-company-enable-fuzzy-completion)
@@ -79,7 +81,7 @@
 ;; Use clojure mode for other extensions
 (add-to-list 'auto-mode-alist '("\\.edn$" . clojure-mode))
 (add-to-list 'auto-mode-alist '("\\.boot$" . clojure-mode))
-(add-to-list 'auto-mode-alist '("\\.cljs.*$" . clojure-mode))
+;;(add-to-list 'auto-mode-alist '("\\.cljs.*$" . clojure-mode))
 (add-to-list 'auto-mode-alist '("lein-env" . enh-ruby-mode))
 
 
