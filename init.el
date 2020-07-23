@@ -85,6 +85,7 @@ there are two things you can do about this warning:
 (load "misc.el")
 (load "elisp-editing.el")
 (load "setup-clojure.el")
+(load "cljstyle-mode.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -134,7 +135,7 @@ there are two things you can do about this warning:
     ("#ffb4ac" "#ddaa6f" "#e5c06d" "#3d454c" "#e2e9ea" "#40424a" "#7ec98f" "#e5786d" "#834c98")))
  '(package-selected-packages
    (quote
-    (smartparens aggressive-indent magit tagedit rainbow-delimiters projectile smex ido-completing-read+ cider clojure-mode-extra-font-locking clojure-mode paredit exec-path-from-shell material-theme solarized-theme)))
+    (flycheck flycheck-clj-kondo smartparens aggressive-indent magit tagedit rainbow-delimiters projectile smex ido-completing-read+ cider clojure-mode-extra-font-locking clojure-mode paredit exec-path-from-shell material-theme solarized-theme)))
  '(pos-tip-background-color "#2f2f2d")
  '(pos-tip-foreground-color "#999791")
  '(send-mail-function (quote mailclient-send-it))
